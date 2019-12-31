@@ -12,7 +12,14 @@ class MyApp extends StatelessWidget {
       title: 'Shopping app UI',
       theme: ThemeData(
         brightness: Brightness.light,
-        accentColor: accentColor
+        accentColor: accentColor,
+        scaffoldBackgroundColor: backgroundColor,
+        appBarTheme: AppBarTheme(
+          elevation: 0,
+          iconTheme: IconThemeData(color:Colors.black),
+          textTheme: TextTheme(title: TextStyle(color:Colors.black)),
+          color: backgroundColor
+        )
       ),
       home: HomePage(),
     );
